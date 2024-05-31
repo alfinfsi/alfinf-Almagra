@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record>
+            <field name="name">survey.survey</field>
+            <field name="model">survey.survey</field>
+            <field name="inherit_id" ref="survey.survey_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='is_attempts_limited']" position="after">
+                    <field name="forUser"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
