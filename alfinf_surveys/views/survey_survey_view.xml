@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record>
-            <field name="name">survey.survey</field>
+        <record id="survey_survey_view_form_inherit" model="ir.ui.view">
+            <field name="name">survey.survey.view.form</field>
             <field name="model">survey.survey</field>
-            <field name="inherit_id" ref="survey.survey_view_form"/>
+            <field name="inherit_id" ref="survey.survey_survey_view_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='is_attempts_limited']" position="after">
-                    <field name="forUser"/>
+                    <label for="foruser"/>
+                        <div class="o_checkbox_optional_field">
+                            <field name="foruser"/>
+                        </div>
+                </xpath>
+
+                <xpath expr="//field[@name='question_and_page_ids']/tree" position="inside">
+                    <field name="field_id"/>
+                </xpath>
+
+                <!-- <xpath expr="//div[class='previus_question']" position="after">
+                    <field name="field_id"/>
+                </xpath> -->
+            </field>
+        </record>
+
+            <record id="survey_question_form_inherit" model="ir.ui.view">
+            <field name="name">survey.question.form.inherit</field>
+            <field name="model">survey.question</field>
+            <field name="inherit_id" ref="survey.survey_question_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('o_preview_questions')]" position="after">
+                    <field name="field_id"/>
                 </xpath>
             </field>
         </record>

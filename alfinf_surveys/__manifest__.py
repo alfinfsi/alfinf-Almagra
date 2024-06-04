@@ -2,8 +2,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 {
-    "name": "Alfinf Almagra",
-    "summary": "Alfinf Almagra",
+    "name": "Alfinf Almagra encuestas",
+    "summary": "Alfinf Almagra encuestas",
     "version": "16.0.1.0.0",
     "development_status": "Beta",
     "license": "AGPL-3",
@@ -14,6 +14,7 @@
         "survey"
     ],
     "data": [
+        "views/survey_survey_view.xml"
     ],
     "installable": True,
 }
