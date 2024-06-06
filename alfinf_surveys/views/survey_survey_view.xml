@@ -12,6 +12,11 @@
                             <field name="foruser" string="Para usuarios"/>
                         </div>
                 </xpath>
+
+                <!-- Campo tabla -->
+                <xpath expr="//field[@name='question_and_page_ids']/tree" position="inside">
+                    <field name="field_id" string="Campo del usuario"/>
+                </xpath>
             </field>
         </record>
 
