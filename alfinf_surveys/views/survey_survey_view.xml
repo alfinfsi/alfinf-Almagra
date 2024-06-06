@@ -6,7 +6,7 @@
             <field name="model">survey.survey</field>
             <field name="inherit_id" ref="survey.survey_survey_view_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='is_attempts_limited']" position="after">
+                <xpath expr="//field[@name='users_login_required']" position="after">
                     <label for="foruser"/>
                         <div class="o_checkbox_optional_field">
                             <field name="foruser"/>
@@ -14,12 +14,9 @@
                 </xpath>
 
                 <xpath expr="//field[@name='question_and_page_ids']/tree" position="inside">
-                    <field name="field_id"/>
+                    <field name="field_id" attrs="{'invisible': [('foruser', '=', False)]}"/>
                 </xpath>
 
-                <!-- <xpath expr="//div[class='previus_question']" position="after">
-                    <field name="field_id"/>
-                </xpath> -->
             </field>
         </record>
 
@@ -29,7 +26,7 @@
             <field name="inherit_id" ref="survey.survey_question_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//div[hasclass('o_preview_questions')]" position="after">
-                    <field name="field_id"/>
+                    <field name="field_id" />
                 </xpath>
             </field>
         </record>
