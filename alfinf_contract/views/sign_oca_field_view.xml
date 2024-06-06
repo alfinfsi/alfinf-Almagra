@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sign_oca_field_form_inherit" model="ir.ui.view">
+            <field name="name">sign_oca_field_form_inherit</field>
+            <field name="model">sign.oca.field</field>
+            <field name="inherit_id" ref="sign_oca.sign_oca_field_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='field_type']" position="after">
+                    <field name="default_value" string="default_value"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
