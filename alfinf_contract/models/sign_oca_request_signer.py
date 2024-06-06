@@ -7,8 +7,8 @@ class SignOcaRequestSigner(models.Model):
     # Herencia del modelo sign.oca.request.signer
     _inherit = 'sign.oca.request.signer'
 
-
-
+    #* El diccionario de partner contiene los valores por defecto de los campos, para hacer referecia
+    #* a ellos tienes que cambiar el valor por defecto en el campo
 
     def get_info(self, access_token=False):
         self.ensure_one()
