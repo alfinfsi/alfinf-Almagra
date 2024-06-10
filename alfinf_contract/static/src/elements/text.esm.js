@@ -10,8 +10,10 @@ textSignOca.generate = function (parent, item, signatureItem) {
             role_id: parent.info.role_id,
         })
     )[0];
-    input.value = parent.info.partner[item.default_value] || "";
-    input.setAttribute("readonly", "readonly");
+    if (item.default_value != '') {
+        input.value = parent.info.partner[item.default_value] || "";
+        input.setAttribute("readonly", "readonly");
+    }
     signatureItem[0].addEventListener("focus_signature", () => {
         input.focus();
     });
