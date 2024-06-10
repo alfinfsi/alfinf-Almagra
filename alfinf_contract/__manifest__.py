@@ -10,6 +10,14 @@
     "author": "Alfinf",
     "website": "https://github.com/alfinfsi/",
     "category": "Connector",
+    "assets": {
+        "web.assets_backend": [
+            "alfinf_contract/static/src/elements/text.esm.js",
+        ],
+        "web.assets_frontend": [
+            "alfinf_contract/static/src/elements/text.esm.js",
+        ],
+    },
     "depends": [
         "sign_oca",
     ],
