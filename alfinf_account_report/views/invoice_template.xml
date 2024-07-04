@@ -1,0 +1,8 @@
+<!-- invoice_template.xml -->
+<odoo>
+  <template id="custom_invoice_document" inherit_id="account.report_invoice_document">
+    <xpath expr="//div[@name='comment']" position="replace">
+      <span t-field="o.narration" style="text-align: justify;" />
+    </xpath>
+  </template>
+</odoo>
