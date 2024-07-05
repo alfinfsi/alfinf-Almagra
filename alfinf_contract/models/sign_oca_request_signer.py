@@ -30,6 +30,7 @@ class SignOcaRequestSigner(models.Model):
                 "pais": self.partner_id.country_id.name,
                 "ciudad": self.partner_id.city,
                 "cif": self.partner_id.vat,
+                "company_name": self.partner_id.company_name,
                 "fecha": self.create_date.strftime("%d de %B del %Y"),
             },
         }
