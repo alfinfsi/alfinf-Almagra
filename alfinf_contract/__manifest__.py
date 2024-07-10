@@ -17,6 +17,9 @@
         "web.assets_frontend": [
             "alfinf_contract/static/src/elements/text.esm.js",
         ],
+        "sign_oca.sign_assets": [
+            "alfinf_contract/static/src/scss/sign.scss",
+        ],
     },
     "depends": [
         "sign_oca",
