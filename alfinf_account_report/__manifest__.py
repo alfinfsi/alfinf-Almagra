@@ -14,7 +14,8 @@
         'account'
     ],
     "data": [
-        'views/invoice_template.xml'
+        "report/ir_actions_report_templates.xml",
+        "report/ir_actions_report.xml",
     ],
     "installable": True,
 }
