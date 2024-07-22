@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_res_partner_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.internal_layout">
+                    <div class="page">
+                        <div class="row">
+                            <div>
+                                <b>REUNIDOS:</b>
+                                <p>
+                                    De una parte, Don MIGUEL ÁNGEL VILCHEZ LOBATO, con DNI
+                                    29.044.105-G,
+                                    en representación de la entidad LA ALMAGRA CONSULTORES S. L.,
+                                    con
+                                    domicilio en Huelva en C/ Béjar nº 29, 4-A, de Huelva y C. I. F.
+                                    B-70.680.780, en adelante el ASESOR.</p>
+                                <p> De otra parte, Don <span t-field="doc.name"></span> mayor de
+                                    edad, vecino de <span t-field="doc.city"></span>(<span
+                                        t-field="doc.state_id.name"></span>) en y con NIF <span
+                                        t-field="doc.vat"></span>, en representación propia, en
+                                    adelante el ASESORADO. Ambas partes intervienen en nombre
+                                    propio, Ambas partes intervienen en nombre propio,</p>
+                            </div>
+                        </div>
+                        <div>
+                            <b>MANIFIESTAN</b>
+                            <p>
+                                Ambas partes suscriben la presente Hoja de Encargo de tramitación de
+                                solicitud de Ayuda para su curso y diligencia con sujeción a las
+                                siguientes condiciones:</p>
+                            <p>
+                                <b>SEGUNDA: Duración del contrato.</b> Alcance del trabajo:
+                                TRAMITACIÓN DE SOLICITUD DE AYUDA para el apoyo a inversiones en
+                                explotaciones agrarias en el marco de la PEPAC 2023-2027.</p>
+                            <p>
+                                <b>TERCERA: Honorarios y forma de Pago.</b>
+                                <p>En concepto de honorarios se facturará los siguientes importes:</p>
+                                <ul>
+                                    <li> 800 euros pagaderos a la firma del presente documento.</li>
+                                    <li> 8,5 % del importe la PROPUESTA DEFINITIVA de RESOLUCIÓN del
+                                        expediente.</li>
+                                </ul>
+                            </p>
+                            <p>
+                                A estas cantidades habrá que incrementar el correspondiente Impuesto
+                                sobre el Valor Añadido.
+                            </p>
+
+                            <p> En los citados honorarios no están incluidos aquellos servicios
+                                relacionados con la obtención de la documentación técnica necesaria
+                                para la concesión de la subvención, así como las gestiones <b>NO
+                                LIGADAS</b> a su tramitación, aunque tengan relación con la misma.
+                                Por ello se determinará en cada caso la cuantía a facturar en
+                                función de las características de los mismos. </p>
+
+                            <p><b>CUARTA. - Pago del precio:</b> El pago del precio estipulado en el
+                                pacto anterior, se realizará por transferencia en la cuenta número
+                                ES17 0237 0508 3091 7370 2014. Dichos ingresos deberán realizarse en
+                                los plazos establecidos en la cláusula anterior.</p>
+
+                            <p><b>QUINTA. -Resolución e incumplimiento:</b> La falta de pago de las
+                                cantidades establecidas en la cláusula tercera facultara al gestor a
+                                resolver el contrato, y si lo estimara oportuno, a proceder a su
+                                reclamación judicial, siendo de cuenta del cliente los gastos que
+                                ello origine, incluidos los derechos y honorarios de Procurador y
+                                Abogado, aplicándose desde la fecha del incumplimiento el interés de
+                                demora legalmente establecido y las cantidades adicionales
+                                siguientes: Si, una vez publicada la PROPUESTA DEFINITIVA de
+                                RESOLUCIÓN del expediente, momento en el cual ha de abonarse el 8,5
+                                % del importe resuelto, el pago de este se demorase TREINTA DÍAS, se
+                                aplicará el 9,5 %, en vez del 8,5 %, sobre el importe resuelto.</p>
+                            <p>Si el expediente del cliente se incluye en el listado de
+                                beneficiarios
+                                PROVISIONALES, tras la publicación oficial de la PROPUESTA
+                                PROVISIONAL
+                                DE RESOLUCIÓN, y por causa imputable al mismo incurre en algunas de
+                                la
+                                circunstancias que le impiden ser beneficiario de la ayuda
+                                tramitada, y
+                                como consecuencia de ello el expediente resulta DENEGADO en la
+                                PORPUESTA
+                                DE RESOLUCIÓN DEFINITIVA, abonará al gestor el 6,5 % del importe
+                                total
+                                de la ayuda aprobada provisionalmente.</p>
+                            <p>A estas cantidades habrá que incrementar el correspondiente Impuesto
+                                sobre el Valor Añadido.</p>
+                            <p>Las circunstancias que impiden la obtención de la condición de
+                                persona o
+                                entidad beneficiaria de la ayuda tramitada son las siguientes:</p>
+                            <ol>
+                                <li>Haber sido condenada mediante sentencia firme a la pena de
+                                    pérdida
+                                    de la posibilidad de obtener subvenciones o ayudas públicas.</li>
+                                <li>Haber solicitado la declaración de concurso voluntario, haber
+                                    sido
+                                    declarada insolvente en cualquier procedimiento, hallarse
+                                    declarada
+                                    en concurso, salvo que en este haya adquirido la eficacia un
+                                    convenio, estar sujeta a intervención judicial o haber sido
+                                    inhabilitada conforme a la Ley Concursal sin que haya concluido
+                                    el
+                                    período de inhabilitación fijado en la sentencia de calificación
+                                    del
+                                    concurso.</li>
+                                <li>Haber dado lugar, por causa de la que hubiese sido declarada
+                                    culpable, a la resolución firme de cualquier contrato celebrado
+                                    con
+                                    la Administración.</li>
+                                <li>Estar incursa la persona física, los administradores de las
+                                    sociedades mercantiles o quienes ostenten la representación
+                                    legal de
+                                    otras personas jurídicas, en alguno de los supuestos de la Ley
+                                    5/2006, de 10 de abril, de Regulación de los conflictos de
+                                    intereses
+                                    de los miembros del Gobierno y de los Altos Cargos de la
+                                    Administración General del Estado, de la Ley 53/1984, de 26 de
+                                    diciembre, de Incompatibilidades del Personal al Servicio de las
+                                    Administraciones Públicas, de la Ley 3/2005, de 8 de abril, de
+                                    Incompatibilidades de Altos Cargos de la Administración de la
+                                    Junta
+                                    de Andalucía y de Declaración de Actividades, Bienes e Intereses
+                                    de
+                                    Altos Cargos y otros Cargos Públicos, o tratarse de cualquiera
+                                    de
+                                    los cargos electivos regulados en la Ley Orgánica 5/1985, de 19
+                                    de
+                                    junio, del Régimen Electoral General, en los términos
+                                    establecidos
+                                    en la misma o en la normativa autonómica que regule estas
+                                    materias.</li>
+                                <li>No hallarse al corriente en el cumplimiento de las obligaciones
+                                    tributarias o frente a la Seguridad Social impuestas por las
+                                    disposiciones vigentes.</li>
+                                <li>Tener la residencia fiscal en un país o territorio calificado
+                                    reglamentariamente como paraíso fiscal.</li>
+                                <li>No hallarse al corriente de pago de obligaciones por reintegro
+                                    de
+                                    subvenciones. Se considerará que se encuentra al corriente
+                                    cuando
+                                    las deudas estén aplazadas, fraccionadas o se hubiera acordado
+                                    su
+                                    suspensión con ocasión de la impugnación de la correspondiente
+                                    resolución de reintegro.</li>
+                                <li>Haber sido sancionada mediante resolución firme con la pérdida
+                                    de la
+                                    posibilidad de obtener subvenciones según la Ley 38/2003 o la
+                                    Ley
+                                    58/2003, de 17 de diciembre, General Tributaria.</li>
+                                <li>Tener deudas en período ejecutivo de cualquier ingreso de
+                                    Derecho
+                                    Público de la Comunidad Autónoma de Andalucía.</li>
+                                <li>En el supuesto de tener la condición de empresa, haber sido
+                                    sancionada o condenada por resolución administrativa firme o
+                                    sentencia judicial firme por alentar o tolerar prácticas
+                                    laborales
+                                    consideradas discriminatorias por la legislación vigente.</li>
+                                <li>En el supuesto de asociaciones, estar incursa en alguna de las
+                                    prohibiciones mencionadas en el artículo 13.3 de la Ley 38/2003.</li>
+
+                                <li>En ningún caso podrán apoyarse explotaciones que se encuentre en
+                                    dificultades o en crisis, definidas según recogen las
+                                    Directrices
+                                    comunitarias sobre ayudas estatales de salvamento y de
+                                    reestructuración de empresas en crisis (2004/ C244/02), Diario
+                                    oficial de la Unión Europea, de 1 de octubre de 2004, de la
+                                    página 2
+                                    a la 17.</li>
+
+                            </ol>
+
+                            <p><b>SEXTA. - Desistimiento del contrato por parte del cliente:</b> Si
+                                el expediente del cliente figura en el listado de BENEFICIARIOS
+                                PROVISIONALES, tras la publicación oficial de la PROPUESTA
+                                PROVISIONAL DE RESOLUCIÓN y decide unilateralmente no seguir con el
+                                procedimiento previo a la publicación oficial de la PROPUESTA
+                                DEFINITIVA DE RESOLUCIÓN, abonará el 6,5 % del importe
+                                provisionalmente aprobado.</p>
+
+                            <p>
+                                <b>SEPTIMA. - Obligaciones del cliente:</b>
+                                <ol>
+                                    <li>Facilitar toda la documentación necesaria para la
+                                        tramitación de
+                                        la solicitud que se encarga.</li>
+                                    <li> Formular las consultas o visitas en las horas establecidas
+                                        al
+                                        efecto.</li>
+                                    <li> Efectuar el pago de los honorarios</li>
+                                    <li> Encontrarse al corriente de sus obligaciones con TGSS, AEAT
+                                        y
+                                        Hacienda estatal y autonómica</li>
+                                    <li> No efectuar gestiones ante los organismos que cursan la
+                                        ayuda
+                                        solicitada sin previo conocimiento del gestor.</li>
+                                    <li> El cliente no podrá solicitar colaboración en la
+                                        realización de
+                                        acciones u omisiones fraudulentas o tendentes a eludir el
+                                        cumplimiento de la normativa aplicable.</li>
+                                    <li> El cliente responde de la exactitud de los datos
+                                        facilitados
+                                        para la consecución de los trabajos encargados, que deberán
+                                        ser
+                                        completos y entregados dentro de plazo. Sera de su exclusiva
+                                        responsabilidad las consecuencias que se deriven por causa
+                                        de
+                                        que los datos facilitados por el cliente que sean
+                                        incompletos,
+                                        insuficientes o se entreguen fuera de plazo. El plazo máximo
+                                        para entrega de la documentación será de 20 días a partir de
+                                        la
+                                        publicación de la convocatoria de la ayuda cuya tramitación
+                                        se
+                                        encarga.</li>
+                                    <li>Una vez cumplimentada la solicitud de Ayuda el cliente
+                                        deberá
+                                        revisarla personalmente y ratificar que los datos contenidos
+                                        en
+                                        la misma se corresponden en su integridad con la información
+                                        por
+                                        él suministrada exonerando al gestor de cualquier
+                                        responsabilidad que pueda derivarse de los datos contenidos
+                                        en
+                                        la misma.</li>
+                                    <li>No encontrarse incurso en causa que impiden la obtención de
+                                        condición de persona o entidad beneficiaria de la ayuda
+                                        tramitada</li>
+                                </ol>
+                            </p>
+                            <p>
+                                <b>OCTAVA. - Jurisdicción:</b>Las partes renuncian al fuero propio
+                                si lo tuvieran, se someten a los Juzgados y Tribunales de Huelva. </p>
+                            <p>
+                                <b>NOVENA. -Normativa Aplicable:</b>Este contrato tiene carácter
+                                mercantil y se regula por sus propias cláusulas o en lo que en ellas
+                                no estuviera contemplado, por lo previsto en las disposiciones
+                                españolas contenidas en el código de comercio leyes especiales y
+                                usos mercantiles. </p>
+                            <p>
+                                <b>DÉCIMA.- Información sobre protección de datos:</b> Como
+                                responsable del tratamiento le informamos que recabamos sus datos
+                                con la finalidad de mantener, desarrollar y gestionar la relación
+                                contractual con nuestra entidad. La base legal para el tratamiento
+                                de sus datos es la ejecución del servicio solicitado. Conservaremos
+                                sus datos el tiempo estrictamente necesario para responder a
+                                exigencias legales. Los datos no se cederán a terceros salvo en los
+                                casos en que exista una obligación legal. Puede ejercer sus derechos
+                                de acceso, rectificación, supresión y portabilidad de sus datos, y
+                                la limitación u oposición a su tratamiento a través de nuestro
+                                correo electrónico o domicilio fiscal. De igual modo, podría
+                                interponer una reclamación ante la Autoridad de Control en
+                                www.aepd.es. </p>
+
+                        </div>
+                    </div>
+                </t>
+            </t>
+
+        </t>
+    </template>
+
+
+    <template id="report_contract">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="alfinf_report_contract.report_res_partner_document" />
+            </t>
+        </t>
+    </template>
+</odoo>

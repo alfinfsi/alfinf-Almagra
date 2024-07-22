@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="odoo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="template" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="t">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="t">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="t">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element name="div" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="div"
+                                        maxOccurs="unbounded">
+                                        <xs:complexType>
+                                          <xs:sequence
+                                            minOccurs="0">
+                                            <xs:element
+                                              name="div"
+                                              minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element
+                                                    name="b"
+                                                    type="xs:string" />
+                                                  <xs:element
+                                                    name="p"
+                                                    maxOccurs="unbounded">
+                                                    <xs:complexType
+                                                      mixed="true">
+                                                      <xs:sequence
+                                                        minOccurs="0">
+                                                        <xs:element
+                                                          name="span"
+                                                          minOccurs="0">
+                                                          <xs:complexType>
+                                                            <xs:attribute
+                                                              name="t-field"
+                                                              use="required" />
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element
+                                              name="b"
+                                              minOccurs="0"
+                                              type="xs:string" />
+                                            <xs:element
+                                              name="p"
+                                              minOccurs="0">
+                                              <xs:complexType
+                                                mixed="true">
+                                                <xs:sequence
+                                                  minOccurs="0">
+                                                  <xs:element
+                                                    name="b"
+                                                    minOccurs="0"
+                                                    type="xs:string" />
+                                                  <xs:element
+                                                    name="p"
+                                                    minOccurs="0"
+                                                    type="xs:string" />
+                                                  <xs:element
+                                                    name="ul"
+                                                    minOccurs="0">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element
+                                                          name="li"
+                                                          maxOccurs="unbounded"
+                                                          type="xs:string" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element
+                                                    name="ol"
+                                                    minOccurs="0">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element
+                                                          name="li"
+                                                          maxOccurs="unbounded"
+                                                          type="xs:string" />
+                                                      </xs:sequence>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                            <xs:element
+                                              name="ol"
+                                              minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element
+                                                    name="li"
+                                                    maxOccurs="unbounded"
+                                                    type="xs:string" />
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute
+                                            name="class" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="class"
+                                      use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="t-call"
+                                use="required" />
+                              <xs:attribute name="t-lang" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="t-foreach" use="required" />
+                        <xs:attribute name="t-as" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="t-call" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
