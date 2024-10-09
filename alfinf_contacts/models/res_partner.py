@@ -9,5 +9,5 @@ class ResPartner(models.Model):
     id_rep = fields.Many2one(
         'res.partner',
         string='Representative',
-        domain="[('is_company', '=', False)]"
+        # domain="[('is_company', '=', False)]"
     )

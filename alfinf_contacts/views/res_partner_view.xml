@@ -11,8 +11,8 @@
 				</xpath>
 				<!-- Domain in child_ids -->
 				<xpath expr="//field[@name='vat']" position="after">
-					<field name="id_rep" placeholder="ID Rep" string="ID Rep" 
-					attrs="{'invisible': [('is_company', '=', False)]}" domain="[('id','in',child_ids)]"
+					<field name="id_rep" placeholder="ID Rep" string="Representante" 
+					attrs="{'invisible': [('is_company', '=', False)]}"
 					options="{'no_create': True, 'no_create_edit': True}"/>
 				</xpath>
 				<!-- xpath replace widgets from child_ids -->
